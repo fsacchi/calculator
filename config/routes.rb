@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get '/calculator/reset_text', to: 'calculator#reset_text', as: 'reset_text_calculator'
   get '/calculator/operation', to: 'calculator#operation', as: 'operation_calculator'
   get '/calculator/equals', to: 'calculator#equals', as: 'equals_calculator'
+  get '/calculator', to: 'calculator#index'
 
 end
