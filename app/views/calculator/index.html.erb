@@ -1,0 +1,62 @@
+
+  <div class="calculator">
+        <div class="result-calculator"><%= @formatted_result %></div>
+        <input type="text" id="result" value="<%= @displayNumber %>"  readonly>
+        <div class="calculator-buttons">
+            <%= link_to concat_text_calculator_path(text: "7") do %>
+                <button>7</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "8") do %>
+                <button>8</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "9") do %>
+                <button>9</button>
+            <% end %>
+            <%= link_to operation_calculator_path(operation: "+") do %>
+                <button>+</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "4") do %>
+                <button>4</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "5") do %>
+                <button>5</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "6") do %>
+                <button>6</button>
+            <% end %>
+            <%= link_to operation_calculator_path(operation: "-") do %>
+                <button>-</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "1") do %>
+                <button>1</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "2") do %>
+                <button>2</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "3") do %>
+                <button>3</button>
+            <% end %>
+            <%= link_to operation_calculator_path(operation: "*") do %>
+                <button>*</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: "0") do %>
+                <button>0</button>
+            <% end %>
+            <%= link_to concat_text_calculator_path(text: ".") do %>
+                <button>.</button>
+            <% end %>
+            <%= link_to equals_calculator_path do %>
+                <button>=</button>
+            <% end %>
+            <%= link_to operation_calculator_path(operation: "/") do %>
+                <button>/</button>
+            <% end %>
+        </div>
+        <%= link_to reset_text_calculator_path do %>
+                 <button class="reset">Resetar</button>
+            <% end %>
+    </div>
+
+
+
+
